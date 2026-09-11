@@ -1,0 +1,827 @@
+{
+  "admin-dashboard.html": {
+    "active_nav": "admin-dashboard",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/admin-dashboard.js"
+    ],
+    "redirect": null
+  },
+  "admin-employer-edit.html": {
+    "active_nav": "admin-employers",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/admin-employer-edit.js"
+    ],
+    "redirect": null
+  },
+  "admin-employer-manage.html": {
+    "active_nav": "admin-employers",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/admin-employer-manage.js"
+    ],
+    "redirect": null
+  },
+  "admin-employer.html": {
+    "active_nav": "admin-employers",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/admin-employer.js"
+    ],
+    "redirect": null
+  },
+  "admin-employers.html": {
+    "active_nav": "admin-employers",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/admin-employers.js"
+    ],
+    "redirect": null
+  },
+  "admin-subscriptions.html": {
+    "active_nav": "admin-subscriptions",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/admin-subscriptions.js"
+    ],
+    "redirect": null
+  },
+  "audit-log.html": {
+    "active_nav": "audit-log",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/audit-log.js"
+    ],
+    "redirect": null
+  },
+  "certificate-manage.html": {
+    "active_nav": "certificates",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/certificate-manage.js"
+    ],
+    "redirect": null
+  },
+  "certificates.html": {
+    "active_nav": "certificates",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/certificates.js"
+    ],
+    "redirect": null
+  },
+  "collection-manage.html": {
+    "active_nav": "collections",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/collection-manage.js"
+    ],
+    "redirect": null
+  },
+  "collection-site-manage.html": {
+    "active_nav": "collection-sites",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/collection-site-manage.js"
+    ],
+    "redirect": null
+  },
+  "collection-sites.html": {
+    "active_nav": "collection-sites",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/collection-sites.js"
+    ],
+    "redirect": null
+  },
+  "collections.html": {
+    "active_nav": "collections",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/collections.js"
+    ],
+    "redirect": null
+  },
+  "communication-template-manage.html": {
+    "active_nav": "communication-templates",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/communication-template-manage.js"
+    ],
+    "redirect": null
+  },
+  "communication-templates.html": {
+    "active_nav": "communication-templates",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/communication-templates.js"
+    ],
+    "redirect": null
+  },
+  "communications.html": {
+    "active_nav": "communications",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/communications.js"
+    ],
+    "redirect": null
+  },
+  "company-manage.html": {
+    "active_nav": "company",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/company-manage.js"
+    ],
+    "redirect": null
+  },
+  "company-user-invite.html": {
+    "active_nav": "company-users",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/company-user-invite.js"
+    ],
+    "redirect": null
+  },
+  "company-user-manage.html": {
+    "active_nav": "company-users",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/company-user-manage.js"
+    ],
+    "redirect": null
+  },
+  "company-users.html": {
+    "active_nav": "company-users",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/company-users.js"
+    ],
+    "redirect": null
+  },
+  "company.html": {
+    "active_nav": "company",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/company.js"
+    ],
+    "redirect": null
+  },
+  "customer-compliance-dashboard.html": {
+    "active_nav": null,
+    "scripts": [],
+    "redirect": "dashboard.html"
+  },
+  "customer-compliance-documents.html": {
+    "active_nav": null,
+    "scripts": [],
+    "redirect": "documents.html"
+  },
+  "customer-compliance-employees.html": {
+    "active_nav": null,
+    "scripts": [],
+    "redirect": "employees.html"
+  },
+  "customer-compliance-orders.html": {
+    "active_nav": null,
+    "scripts": [],
+    "redirect": "testing-orders.html"
+  },
+  "customer-compliance-random.html": {
+    "active_nav": null,
+    "scripts": [],
+    "redirect": "random-program.html"
+  },
+  "customer-compliance-results.html": {
+    "active_nav": null,
+    "scripts": [],
+    "redirect": "results.html"
+  },
+  "dashboard.html": {
+    "active_nav": "dashboard",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/dashboard.js"
+    ],
+    "redirect": null
+  },
+  "document-upload.html": {
+    "active_nav": "documents",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/document-upload.js"
+    ],
+    "redirect": null
+  },
+  "documents.html": {
+    "active_nav": "documents",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/documents.js"
+    ],
+    "redirect": null
+  },
+  "employee-certificates.html": {
+    "active_nav": "employee-certificates",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-certificates.js"
+    ],
+    "redirect": null
+  },
+  "employee-dashboard.html": {
+    "active_nav": "employee-dashboard",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-dashboard.js"
+    ],
+    "redirect": null
+  },
+  "employee-documents.html": {
+    "active_nav": "employee-documents",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-documents.js"
+    ],
+    "redirect": null
+  },
+  "employee-manage.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-manage.js"
+    ],
+    "redirect": null
+  },
+  "employee-portal-access.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-portal-access.js"
+    ],
+    "redirect": null
+  },
+  "employee-profile.html": {
+    "active_nav": "employee-profile",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-profile.js"
+    ],
+    "redirect": null
+  },
+  "employee-programs.html": {
+    "active_nav": "employee-programs",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-programs.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-certificates.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-certificates.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-communications.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-communications.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-documents.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-documents.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-pools.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-pools.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-programs.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-programs.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-random.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-random.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-results.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-results.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-tests.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-tests.js"
+    ],
+    "redirect": null
+  },
+  "employee-record-timeline.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record-common.js",
+      "assets/js/employee-record-timeline.js"
+    ],
+    "redirect": null
+  },
+  "employee-record.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-record.js"
+    ],
+    "redirect": null
+  },
+  "employee-tests.html": {
+    "active_nav": "employee-tests",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employee-tests.js"
+    ],
+    "redirect": null
+  },
+  "employees.html": {
+    "active_nav": "employees",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/employees.js"
+    ],
+    "redirect": null
+  },
+  "index.html": {
+    "active_nav": null,
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/login.js"
+    ],
+    "redirect": null
+  },
+  "integration-events.html": {
+    "active_nav": "integration-events",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/integration-events.js"
+    ],
+    "redirect": null
+  },
+  "integration-manage.html": {
+    "active_nav": "integrations",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/integration-manage.js"
+    ],
+    "redirect": null
+  },
+  "integrations.html": {
+    "active_nav": "integrations",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/integrations.js"
+    ],
+    "redirect": null
+  },
+  "invitation-accept.html": {
+    "active_nav": null,
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/invitation-accept.js"
+    ],
+    "redirect": null
+  },
+  "locations.html": {
+    "active_nav": "locations",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/locations.js"
+    ],
+    "redirect": null
+  },
+  "notification-center.html": {
+    "active_nav": "notification-center",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/notification-center.js"
+    ],
+    "redirect": null
+  },
+  "platform-health.html": {
+    "active_nav": "platform-health",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/platform-health.js"
+    ],
+    "redirect": null
+  },
+  "pool-enrollment-manage.html": {
+    "active_nav": "pool-enrollment",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/pool-enrollment-manage.js"
+    ],
+    "redirect": null
+  },
+  "pool-enrollment.html": {
+    "active_nav": "pool-enrollment",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/pool-enrollment.js"
+    ],
+    "redirect": null
+  },
+  "pool-manage.html": {
+    "active_nav": "pools",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/pool-manage.js"
+    ],
+    "redirect": null
+  },
+  "pool-record.html": {
+    "active_nav": "pools",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/pool-record.js"
+    ],
+    "redirect": null
+  },
+  "pools.html": {
+    "active_nav": "pools",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/pools.js"
+    ],
+    "redirect": null
+  },
+  "program-manage.html": {
+    "active_nav": "programs",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/program-manage.js"
+    ],
+    "redirect": null
+  },
+  "program-record.html": {
+    "active_nav": "programs",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/program-record.js"
+    ],
+    "redirect": null
+  },
+  "programs.html": {
+    "active_nav": "programs",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/programs.js"
+    ],
+    "redirect": null
+  },
+  "random-program.html": {
+    "active_nav": "random-program",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/random-program.js"
+    ],
+    "redirect": null
+  },
+  "random-selection-new.html": {
+    "active_nav": "random-program",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/random-selection-new.js"
+    ],
+    "redirect": null
+  },
+  "random-selection.html": {
+    "active_nav": "random-program",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/random-selection.js"
+    ],
+    "redirect": null
+  },
+  "report-certificates.html": {
+    "active_nav": "reports",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/certificate-report.js"
+    ],
+    "redirect": null
+  },
+  "report-random.html": {
+    "active_nav": "reports",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/random-report.js"
+    ],
+    "redirect": null
+  },
+  "report-testing.html": {
+    "active_nav": "reports",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/testing-report.js"
+    ],
+    "redirect": null
+  },
+  "report-workforce.html": {
+    "active_nav": "reports",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/workforce-report.js"
+    ],
+    "redirect": null
+  },
+  "reports.html": {
+    "active_nav": "reports",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/reports.js"
+    ],
+    "redirect": null
+  },
+  "result-manage.html": {
+    "active_nav": "results",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/result-manage.js"
+    ],
+    "redirect": null
+  },
+  "results.html": {
+    "active_nav": "results",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/results.js"
+    ],
+    "redirect": null
+  },
+  "role-permissions.html": {
+    "active_nav": "role-permissions",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/role-permissions.js"
+    ],
+    "redirect": null
+  },
+  "security-settings.html": {
+    "active_nav": "security-settings",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/security-settings.js"
+    ],
+    "redirect": null
+  },
+  "subscription.html": {
+    "active_nav": "subscription",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/subscription.js"
+    ],
+    "redirect": null
+  },
+  "testing-order-edit.html": {
+    "active_nav": "testing-orders",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/testing-order-edit.js"
+    ],
+    "redirect": null
+  },
+  "testing-order-new.html": {
+    "active_nav": "testing-orders",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/testing-order-new.js"
+    ],
+    "redirect": null
+  },
+  "testing-order.html": {
+    "active_nav": "testing-orders",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/testing-order.js"
+    ],
+    "redirect": null
+  },
+  "testing-orders.html": {
+    "active_nav": "testing-orders",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/testing-orders.js"
+    ],
+    "redirect": null
+  },
+  "work-item-manage.html": {
+    "active_nav": "work-queue",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/work-item-manage.js"
+    ],
+    "redirect": null
+  },
+  "work-queue.html": {
+    "active_nav": "work-queue",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/work-queue.js"
+    ],
+    "redirect": null
+  },
+  "workflow-automation.html": {
+    "active_nav": "workflow-automation",
+    "scripts": [
+      "assets/js/supabase-config.js",
+      "assets/js/navigation.js",
+      "assets/js/customer-compliance-core.js",
+      "assets/js/workflow-automation.js"
+    ],
+    "redirect": null
+  }
+}
