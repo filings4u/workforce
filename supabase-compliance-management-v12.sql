@@ -1,0 +1,2 @@
+-- Applied: compliance_integrations_workflow_engine_v12
+-- Integrations registry, workflow rules/runs, integration events, deduplicated compliance notification processing.

@@ -1,0 +1,2 @@
+Build 20260911-22
+Responsive off-canvas navigation, mobile account switcher, logo2 branding, sidebar scrollbar hidden, duplicate admin employee link removed, admin integrations/administration navigation restored, responsive forms/tables/cards.
