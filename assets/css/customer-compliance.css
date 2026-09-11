@@ -5,3 +5,202 @@ html.s4u-auth-pending body{visibility:hidden}.cc-side{position:sticky;top:0;heig
 .cc-brand img{display:block;width:176px;max-width:100%;height:auto;margin:0 0 8px}
 .cc-brand small{display:block}
 .cc-login-brand img{display:block;width:210px;max-width:100%;height:auto}
+
+.cc-detail-grid{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.cc-detail-grid.one{grid-template-columns:1fr}.cc-detail-grid .full{grid-column:1/-1}.cc-detail-grid small{display:block;color:#8a97a7;font-size:10px;font-weight:800;text-transform:uppercase;margin-bottom:5px}.cc-detail-grid strong{display:block;color:#294567;font-size:13px}.cc-timeline{padding:12px 20px 22px}.cc-timeline-item{display:flex;gap:13px;padding:12px 0;border-bottom:1px solid #edf0f4}.cc-timeline-item:last-child{border-bottom:0}.cc-timeline-item i{width:9px;height:9px;border-radius:50%;background:#ff6b00;margin-top:4px;flex:0 0 auto}.cc-timeline-item strong{display:block;color:#294567;font-size:12px;text-transform:capitalize}.cc-timeline-item small{display:block;color:#8a97a7;font-size:10px;margin-top:3px}@media(max-width:650px){.cc-detail-grid{grid-template-columns:1fr}.cc-detail-grid .full{grid-column:auto}}
+.cc-brand{background:#fff;border-radius:10px;padding:12px;margin:12px}.cc-brand img{width:100%;max-width:190px;margin:0 auto 7px}.cc-brand small{text-align:center;color:#52667f}.cc-login-brand{background:#fff}.cc-login-brand img{width:230px}.cc-panel-head small{font-size:10px;color:#8997a8}
+.cc-nav-group{margin:12px 0}.cc-nav-group>span{display:block;padding:7px 16px 5px;font-size:9px;font-weight:800;letter-spacing:.13em;color:#8da0b6}.cc-nav-group a{display:block}.cc-heading-actions{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.cc-toolbar{display:flex;gap:10px;margin:20px 0 12px}.cc-toolbar input,.cc-toolbar select{border:1px solid #dce3ec;border-radius:8px;padding:10px 12px;background:#fff}.cc-toolbar input{min-width:320px;flex:1}.cc-modal-wide{max-width:880px}.cc-tabs{display:flex;border-bottom:1px solid #e4e9f0;padding:0 20px}.cc-tabs button{background:none;border:0;padding:13px 16px;font-weight:700;color:#718096}.cc-tabs button.active{color:#24467f;border-bottom:2px solid #24467f}.cc-check{display:flex;flex-direction:column;gap:9px}.cc-check label{display:flex;gap:8px;align-items:center}.cc-table small{display:block;margin-top:3px;color:#8a98a9}@media(max-width:800px){.cc-heading-actions{align-items:stretch;flex-direction:column}.cc-toolbar{flex-direction:column}.cc-toolbar input{min-width:0}.cc-table{min-width:900px}.cc-panel{overflow:auto}}
+
+.cc-account-switcher{display:flex;align-items:center;gap:8px;margin-left:auto;margin-right:18px}.cc-account-switcher label{font-size:11px;font-weight:800;color:#718096}.cc-account-switcher select{max-width:260px;border:1px solid #dce3ec;border-radius:8px;padding:8px 10px;background:#fff}.cc-list-row{padding:14px 16px;border-bottom:1px solid #edf1f5;display:flex;justify-content:space-between;gap:20px}.cc-list-row span{color:#718096}@media(max-width:800px){.cc-account-switcher{display:none}.cc-list-row{flex-direction:column;gap:5px}}
+
+/* branded notices only; management uses dedicated pages */
+.cc-error{display:none!important}.cc-brand-popup{position:fixed;right:24px;top:24px;z-index:9999;max-width:430px;opacity:0;transform:translateY(-14px);pointer-events:none;transition:.2s}.cc-brand-popup.show{opacity:1;transform:none;pointer-events:auto}.cc-brand-popup-card{display:flex;align-items:flex-start;gap:12px;background:#fff;border:1px solid #dce4ee;border-radius:14px;box-shadow:0 18px 45px rgba(16,40,75,.18);padding:16px}.cc-brand-popup-mark{width:40px;height:40px;border-radius:10px;background:#24467f;color:#fff;display:grid;place-items:center;font-size:11px;font-weight:800}.cc-brand-popup-copy{flex:1}.cc-brand-popup-copy strong{color:#17335f}.cc-brand-popup-copy p{margin:4px 0 0;color:#5f6f82;line-height:1.45}.cc-brand-popup-card>button{border:0;background:transparent;font-size:22px;color:#8391a2;cursor:pointer}.cc-brand-popup[data-kind="success"] .cc-brand-popup-mark{background:#138a63}.cc-brand-popup[data-kind="error"] .cc-brand-popup-mark{background:#b94343}.cc-management-form{max-width:1050px}.cc-section-title{margin:0 0 16px;color:#17335f}.cc-page-actions{display:flex;gap:10px;align-items:center}.cc-form-section{padding:22px;border-bottom:1px solid #e7ecf2}.cc-form-section:last-child{border-bottom:0}.cc-back{color:#24467f;text-decoration:none;font-weight:700}
+
+.cc-record-nav{display:flex;gap:4px;overflow:auto;padding:5px;margin:0 0 18px;background:#fff;border:1px solid #e3e8ef;border-radius:10px}
+.cc-record-nav a{white-space:nowrap;padding:9px 12px;border-radius:7px;text-decoration:none;color:#617187;font-size:12px;font-weight:700}
+.cc-record-nav a:hover,.cc-record-nav a.active{background:#eef4fb;color:#24467f}
+.cc-stat-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:#dfe6ef;border:1px solid #dfe6ef;border-radius:10px;overflow:hidden;margin-bottom:18px}
+.cc-stat-strip>div{background:#fff;padding:16px}.cc-stat-strip strong{display:block;font-size:22px;color:#17335f}.cc-stat-strip span{font-size:11px;color:#7a899b}
+.cc-workspace-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;margin-bottom:18px}.cc-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.cc-detail-grid>div{padding:13px 0;border-bottom:1px solid #edf1f5}.cc-detail-grid span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#8b98a8}.cc-detail-grid strong{display:block;margin-top:4px;color:#27384d}
+.cc-list-row{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:13px 0;border-bottom:1px solid #edf1f5;text-decoration:none;color:#27384d}.cc-list-row small{display:block;color:#8a98a9;margin-top:3px}
+.cc-timeline-row{display:grid;grid-template-columns:16px 1fr;gap:10px;padding:0 0 18px}.cc-timeline-row>span{width:9px;height:9px;background:#24467f;border-radius:50%;margin-top:5px;box-shadow:0 0 0 4px #edf3fa}.cc-timeline-row strong{display:block}.cc-timeline-row p{margin:3px 0;color:#637387}.cc-timeline-row small{color:#8a98a9}
+.cc-table-wrap{overflow:auto}.cc-panel-head{display:flex;align-items:center;justify-content:space-between;gap:15px}
+@media(max-width:900px){.cc-stat-strip{grid-template-columns:repeat(2,1fr)}.cc-workspace-grid{grid-template-columns:1fr}.cc-detail-grid{grid-template-columns:1fr}}
+
+
+/* =========================================================
+   Layout correction — Build 20260911-12
+   Keep every management page centered and use the full main
+   workspace without the narrow/off-center form appearance.
+   ========================================================= */
+.cc-app{
+  grid-template-columns:250px minmax(0,1fr);
+  width:100%;
+}
+
+.cc-main{
+  min-width:0;
+  width:100%;
+}
+
+.cc-content{
+  width:100%;
+  max-width:1600px;
+  margin:0 auto;
+  padding:32px 34px 48px;
+}
+
+.cc-heading,
+.cc-heading-row,
+.cc-heading-actions{
+  width:100%;
+}
+
+.cc-panel,
+.cc-management-form{
+  width:100%;
+  max-width:none;
+}
+
+.cc-management-form{
+  margin:20px auto 0;
+}
+
+.cc-form-section{
+  width:100%;
+}
+
+.cc-form-grid{
+  width:100%;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  column-gap:20px;
+  row-gap:16px;
+}
+
+.cc-field{
+  min-width:0;
+}
+
+.cc-field input:not([type="checkbox"]):not([type="radio"]),
+.cc-field select,
+.cc-field textarea{
+  width:100%;
+  min-width:0;
+}
+
+.cc-field textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+/* Checkbox/radio fields must never inherit the 100% text-input width. */
+.cc-field input[type="checkbox"],
+.cc-field input[type="radio"],
+.cc-check input[type="checkbox"],
+.cc-check input[type="radio"]{
+  width:auto !important;
+  min-width:16px;
+  height:16px;
+  margin:0;
+  flex:0 0 auto;
+}
+
+.cc-form-grid > .cc-check{
+  grid-column:1 / -1;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px 12px;
+}
+
+.cc-check label{
+  display:inline-flex;
+  flex:0 0 auto;
+  align-items:center;
+  gap:8px;
+  min-height:38px;
+  padding:9px 12px;
+  margin:0;
+  border:1px solid #dce4ee;
+  border-radius:8px;
+  background:#f8fafc;
+  color:#425b78;
+  font-size:11px;
+  font-weight:800;
+  text-transform:none;
+  letter-spacing:0;
+  cursor:pointer;
+}
+
+.cc-page-actions{
+  justify-content:flex-end;
+  padding-top:18px;
+  padding-bottom:18px;
+}
+
+.cc-section-title{
+  font-size:22px;
+  line-height:1.2;
+  margin-bottom:18px;
+}
+
+/* Preserve sidebar scrolling while removing the visible browser scrollbar. */
+.cc-side{
+  overflow-y:auto;
+  overflow-x:hidden;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+}
+
+.cc-side::-webkit-scrollbar{
+  width:0;
+  height:0;
+  display:none;
+}
+
+/* Keep tables and record pages aligned to the same main workspace width. */
+.cc-table-wrap,
+.cc-record-nav,
+.cc-stat-strip,
+.cc-workspace-grid{
+  width:100%;
+}
+
+@media (min-width:1400px){
+  .cc-content{
+    padding-left:42px;
+    padding-right:42px;
+  }
+}
+
+@media (max-width:1100px){
+  .cc-content{
+    padding:26px 24px 40px;
+  }
+}
+
+@media (max-width:850px){
+  .cc-content{
+    width:100%;
+    max-width:none;
+    padding:18px 16px 32px;
+  }
+
+  .cc-form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cc-form-grid > .cc-check{
+    grid-column:auto;
+  }
+
+  .cc-check{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .cc-check label{
+    width:100%;
+  }
+}
