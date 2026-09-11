@@ -29,7 +29,7 @@ html.s4u-auth-pending body{visibility:hidden}.cc-side{position:sticky;top:0;heig
 
 
 /* =========================================================
-   Layout correction — Build 20260911-12
+   Layout correction — Build 20260911-18
    Keep every management page centered and use the full main
    workspace without the narrow/off-center form appearance.
    ========================================================= */
@@ -204,3 +204,21 @@ html.s4u-auth-pending body{visibility:hidden}.cc-side{position:sticky;top:0;heig
     width:100%;
   }
 }
+
+.cc-action-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.cc-callout{margin-top:20px;padding:16px 18px;border:1px solid #dce6f2;border-left:4px solid #24467f;border-radius:8px;background:#f7faff}
+.cc-callout strong{display:block;color:#17335f}.cc-callout p{margin:5px 0 0;color:#62748a}
+.cc-break{word-break:break-all}
+
+.cc-status-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cc-result-summary .cc-result-value{margin-bottom:18px}
+.cc-table td small{display:block;margin-top:3px;color:#8290a1}
+.cc-disabled{opacity:.45;pointer-events:none}
+
+.cc-link-btn{border:0;background:none;padding:0;color:#24467f;font:inherit;font-weight:700;cursor:pointer}.cc-field small{display:block;margin-top:6px;color:#7b8999}.cc-detail-grid.one{grid-template-columns:1fr}
+
+.cc-scorecard{display:grid;grid-template-columns:240px 1fr;gap:24px;background:#17335f;color:white;border-radius:16px;padding:24px;margin-bottom:20px}.cc-scorecard>div:first-child>span,.cc-scorecard>div:first-child>small{display:block;opacity:.78}.cc-scorecard>div:first-child>strong{display:block;font-size:56px;line-height:1;margin:8px 0}.cc-score-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.cc-score-metrics div{background:rgba(255,255,255,.09);border-radius:12px;padding:16px}.cc-score-metrics strong,.cc-score-metrics span{display:block}.cc-score-metrics strong{font-size:24px}.cc-list-row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid #e8edf3;text-decoration:none;color:inherit}.cc-list-row small{display:block;color:#7b8999;margin-top:4px}.cc-progress-row{display:grid;grid-template-columns:150px 40px 1fr;align-items:center;gap:10px;padding:10px 0}.cc-progress-row i{height:7px;background:#edf1f6;border-radius:20px;overflow:hidden}.cc-progress-row i b{display:block;height:100%;background:#24467f}.cc-report-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.cc-report-card{border:1px solid #dfe6ef;border-radius:12px;padding:20px;text-decoration:none;color:inherit}.cc-report-card strong,.cc-report-card span{display:block}.cc-report-card span{color:#6f7d8d;margin-top:7px}.cc-mis-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.cc-mis-head strong,.cc-mis-head span{display:block}.cc-mis-head span{color:#7b8999;margin-top:4px}@media(max-width:900px){.cc-scorecard{grid-template-columns:1fr}.cc-score-metrics{grid-template-columns:repeat(2,1fr)}.cc-report-grid{grid-template-columns:1fr}}
+
+.cc-row-actions{display:flex;align-items:center;gap:12px;white-space:nowrap}.cc-table td small{display:block;color:#7b8999;margin-top:4px}.cc-check-field{display:flex;align-items:flex-end;padding-bottom:10px}.cc-check-field label{display:flex;align-items:center;gap:9px;font-weight:700}.cc-check-field input{width:auto}.cc-detail-grid>div{min-width:0}.cc-detail-grid>div span,.cc-detail-grid>div strong{display:block}.cc-detail-grid>div span{font-size:12px;color:#7b8999;text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px}
+
+.cc-permission-table th:not(:first-child),.cc-permission-table td:not(:first-child){text-align:center}.cc-perm{font-size:18px;font-weight:800;color:#24467f}.cc-invite-body{min-height:100vh;display:grid;place-items:center;background:#f3f6fa;padding:24px}.cc-invite-card{width:min(520px,100%);background:white;border:1px solid #dfe6ef;border-radius:18px;padding:36px;box-shadow:0 18px 50px rgba(23,51,95,.1)}.cc-invite-card img{width:190px;max-width:70%;margin-bottom:28px}.cc-invite-card h1{color:#17335f;margin:8px 0 10px}.cc-invite-card p{color:#6f7d8d;line-height:1.6;margin-bottom:22px}

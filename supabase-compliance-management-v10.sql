@@ -1,0 +1,3 @@
+-- Applied: compliance_users_roles_invitations_v10
+-- Applied: compliance_invitation_email_acceptance_v10
+-- Access invitation records, plan user-limit enforcement, company user directory, secure acceptance, employee portal linking, role safety.
