@@ -29,7 +29,7 @@ html.s4u-auth-pending body{visibility:hidden}.cc-side{position:sticky;top:0;heig
 
 
 /* =========================================================
-   Layout correction — Build 20260911-18
+   Layout correction — Build 20260911-19
    Keep every management page centered and use the full main
    workspace without the narrow/off-center form appearance.
    ========================================================= */
@@ -222,3 +222,5 @@ html.s4u-auth-pending body{visibility:hidden}.cc-side{position:sticky;top:0;heig
 .cc-row-actions{display:flex;align-items:center;gap:12px;white-space:nowrap}.cc-table td small{display:block;color:#7b8999;margin-top:4px}.cc-check-field{display:flex;align-items:flex-end;padding-bottom:10px}.cc-check-field label{display:flex;align-items:center;gap:9px;font-weight:700}.cc-check-field input{width:auto}.cc-detail-grid>div{min-width:0}.cc-detail-grid>div span,.cc-detail-grid>div strong{display:block}.cc-detail-grid>div span{font-size:12px;color:#7b8999;text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px}
 
 .cc-permission-table th:not(:first-child),.cc-permission-table td:not(:first-child){text-align:center}.cc-perm{font-size:18px;font-weight:800;color:#24467f}.cc-invite-body{min-height:100vh;display:grid;place-items:center;background:#f3f6fa;padding:24px}.cc-invite-card{width:min(520px,100%);background:white;border:1px solid #dfe6ef;border-radius:18px;padding:36px;box-shadow:0 18px 50px rgba(23,51,95,.1)}.cc-invite-card img{width:190px;max-width:70%;margin-bottom:28px}.cc-invite-card h1{color:#17335f;margin:8px 0 10px}.cc-invite-card p{color:#6f7d8d;line-height:1.6;margin-bottom:22px}
+
+.cc-muted{color:#8b98a8;font-size:13px}.cc-management-form textarea{min-height:220px;line-height:1.55}
