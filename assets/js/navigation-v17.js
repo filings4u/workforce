@@ -111,7 +111,7 @@ function draw(ctx){
   });
 
   document.querySelectorAll("[data-compliance-logo]").forEach(el=>{
-    el.innerHTML='<img src="images/logo.png" alt="screenings4u"><small>'+
+    el.innerHTML='<img src="images/logo2.png" alt="screenings4u"><small>'+
       ({admin:"Compliance Administration",employer:"Workforce Compliance",employee:"Employee Compliance"}[mode]||"Workforce Compliance")+
       '</small>';
   });
