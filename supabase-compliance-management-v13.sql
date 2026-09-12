@@ -1,2 +1,0 @@
--- Applied: compliance_security_administration_v13
--- Account security/retention settings, role-sensitive result/document RLS, security health and safe audit feed.
