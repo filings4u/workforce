@@ -276,3 +276,5 @@
   .product-preview-frame{border-radius:10px}
   .product-preview-points{grid-template-columns:1fr;margin-top:24px}
 }
+
+.checkout-message{margin-top:14px;font-size:13px;font-weight:700;color:#9b2c2c}.checkout-button:disabled{opacity:.65;cursor:wait}

@@ -45,7 +45,7 @@
     <div class="inner-hero-copy">
       <span class="eyebrow">Secure software checkout</span>
       <h1>Start your Workforce Compliance subscription.</h1>
-      <p>Confirm your software plan and organization information. Payment processing and automatic account provisioning will connect to this page next.</p>
+      <p>Confirm your software plan and organization information. Enter your account information, then continue to our secure Stripe checkout. Your Workforce Compliance workspace is provisioned automatically after payment.</p>
     </div>
   </div>
 </section>
@@ -90,12 +90,13 @@
       <div class="checkout-card">
         <div class="checkout-card-heading">
           <span class="checkout-step">2</span>
-          <div><h2>Billing</h2><p>Secure payment fields will be connected here when we wire the checkout processor.</p></div>
+          <div><h2>Secure billing</h2><p>Payment is completed on Stripe’s secure hosted checkout.</p></div>
         </div>
         <div class="payment-placeholder">
           <div class="payment-lock">🔒</div>
-          <div><strong>Secure payment connection coming next</strong><span>This page is structured for the live subscription checkout integration.</span></div>
+          <div><strong>Secure Stripe checkout</strong><span>Card and eligible payment details are entered directly on Stripe. screenings4u does not store your card number.</span></div>
         </div>
+        <div id="checkoutMessage" class="checkout-message" role="status" aria-live="polite"></div>
       </div>
     </div>
 
@@ -109,7 +110,7 @@
         <div class="summary-row"><span>Testing services</span><strong>Not included</strong></div>
         <div class="summary-divider"></div>
         <p class="summary-note">Drug and alcohol tests may be purchased separately. Your software account remains active independently of testing purchases.</p>
-        <button class="btn btn-orange checkout-button" form="checkoutForm" type="submit">Continue to Secure Payment</button>
+        <button class="btn btn-orange checkout-button" id="checkoutButton" form="checkoutForm" type="submit">Continue to Secure Payment</button>
         <p class="checkout-help">Already have an account? <a href="https://app.screenings4u.com">Sign in to your portal</a>.</p>
       </div>
     </aside>
@@ -122,5 +123,6 @@
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/footer.js"></script>
 <script src="assets/js/site.js"></script>
+<script src="assets/js/stripe-checkout.js"></script>
 </body>
 </html>
