@@ -27,7 +27,7 @@ function initS4UFooter() {
     <div class="container footer-shell">
       <div class="footer-brand-area">
         <a class="footer-brand" href="index.html" aria-label="screenings4u Workforce Compliance home">
-          <img src="images/logo.png" alt="screenings4u" class="footer-logo" loading="lazy" decoding="async">
+          <img src="images/logo2.png" alt="screenings4u" class="footer-logo" loading="lazy" decoding="async">
         </a>
         <p class="footer-about">
           Workforce Compliance software for managing employees, DOT and non-DOT programs,
@@ -81,7 +81,7 @@ function initS4UFooter() {
 
     <div class="container footer-bottom">
       <div class="footer-bottom-copy">
-        <span class="footer-copyright">© <span id="footerYear"></span> screenings4u. All rights reserved.</span>
+        <span class="footer-copyright">© <span id="footerYear"></span> screenings4u | Workforce Compliance. All rights reserved.</span>
         <span class="footer-subsidiary">A Subsidiary of <a href="https://www.roselandcompanies.com/" target="_blank" rel="noopener noreferrer">Roseland Companies, LLC</a></span>
       </div>
       <nav class="footer-legal-links" aria-label="Legal links">
