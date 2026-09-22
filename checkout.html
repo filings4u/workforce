@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Monthly pricing for screenings4u Workforce Compliance software.">
+<meta name="theme-color" content="#24467f">
+<title>Checkout | screenings4u Workforce Compliance</title>
+<link rel="icon" href="images/fav.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/desktop-nav.css">
+<link rel="stylesheet" href="assets/css/mobile-nav.css">
+<link rel="stylesheet" href="assets/css/workforce.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left"><span>Workforce Compliance Software by screenings4u</span><span>•</span><span>Serving Customers Nationwide</span></div>
+    <div class="topbar-right"><a href="tel:7732457009">(773) 245-7009</a><a href="mailto:support@screenings4u.com">support@screenings4u.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container nav-inner" id="navInner">
+ <a class="brand" href="index.html" aria-label="screenings4u Workforce Compliance">
+      <img src="images/logo.png" alt="screenings4u" class="site-logo">
+      <span class="brand-workforce"><span class="brand-rule"></span><span class="brand-title">Workforce Compliance</span></span>
+    </a>
+    <nav id="desktopNav" aria-label="Primary navigation"></nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="https://app.screenings4u.com">Sign In</a>
+      <a class="btn btn-orange" href="pricing.html">Start Your Account</a>
+      <button id="mobileToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav id="mobileNav" aria-label="Mobile navigation"></nav>
+  </div>
+</header>
+
+
+<main>
+<section class="inner-hero platform checkout-hero">
+  <div class="container">
+    <div class="inner-hero-copy">
+      <span class="eyebrow">Secure software checkout</span>
+      <h1>Start your Workforce Compliance subscription.</h1>
+      <p>Confirm your software plan and organization information. Enter your account information, then continue to our secure Stripe checkout. Your Workforce Compliance workspace is provisioned automatically after payment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section checkout-section">
+  <div class="container checkout-layout">
+    <div class="checkout-main">
+      <div class="checkout-card">
+        <div class="checkout-card-heading">
+          <span class="checkout-step">1</span>
+          <div><h2>Account information</h2><p>Tell us who will own the Workforce Compliance account.</p></div>
+        </div>
+        <form class="form-grid" id="checkoutForm">
+          <div class="field"><label>First name</label><input name="first_name" autocomplete="given-name" required></div>
+          <div class="field"><label>Last name</label><input name="last_name" autocomplete="family-name" required></div>
+          <div class="field full"><label>Business email</label><input name="email" type="email" autocomplete="email" required></div>
+          <div class="field full"><label>Company / organization</label><input name="organization" autocomplete="organization" required></div>
+          <div class="field"><label>Phone</label><input name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label>Account type</label>
+            <select name="account_type" id="accountType">
+              <option value="employer">Employer</option>
+              <option value="owner_operator">Owner-Operator</option>
+              <option value="ctpa">C/TPA</option>
+            </select>
+          </div>
+          <div class="field full"><label>Selected software plan</label>
+            <select name="plan" id="planSelect">
+              <option value="employer_essential">Employer Essential — $85/month</option>
+              <option value="employer_professional">Employer Professional — $145/month</option>
+              <option value="employer_enterprise">Employer Enterprise — $245/month</option>
+              <option value="owner_operator_essential">Owner-Operator Essential — $45/month</option>
+              <option value="owner_operator_plus">Owner-Operator Plus — $125/month</option>
+              <option value="owner_operator_complete">Owner-Operator Complete — $225/month</option>
+              <option value="ctpa_essential">C/TPA Essential — $125/month</option>
+              <option value="ctpa_professional">C/TPA Professional — $225/month</option>
+              <option value="ctpa_enterprise">C/TPA Enterprise — $375/month</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <aside class="checkout-summary">
+      <div class="summary-card">
+        <span class="eyebrow">Order summary</span>
+        <h2 id="summaryPlan">Employer Essential</h2>
+        <div class="summary-price"><strong id="summaryPrice">$85</strong><span>/ month</span></div>
+        <div class="summary-row"><span>Product</span><strong>Workforce Compliance Software</strong></div>
+        <div class="summary-row"><span>Billing</span><strong>Monthly</strong></div>
+        <div class="summary-row"><span>Testing services</span><strong>Not included</strong></div>
+        <div class="summary-divider"></div>
+        <p class="summary-note">Drug and alcohol tests may be purchased separately. Your software account remains active independently of testing purchases.</p>
+        <button class="btn btn-orange checkout-button" id="checkoutButton" form="checkoutForm" type="submit">Continue to Secure Payment</button>
+        <p class="checkout-help">Already have an account? <a href="https://app.screenings4u.com">Sign in to your portal</a>.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+
+<footer id="siteFooter" aria-label="Website footer"></footer>
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/footer.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/stripe-checkout.js"></script>
+</body>
+</html>

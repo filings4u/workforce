@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#24467f">
+
+<title>Purchase Receipt | screenings4u Workforce Compliance</title>
+
+<link rel="icon" href="images/fav.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    background:#ffffff;
+    color:#24467f;
+    font-family:Inter,Arial,sans-serif;
+}
+
+.page{
+    width:min(760px,calc(100% - 28px));
+    margin:46px auto;
+    background:#ffffff;
+}
+
+.receipt{
+    background:#ffffff;
+    border:1px solid #dfe6f0;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:none;
+}
+
+.header{
+    padding:28px 34px;
+    background:#ffffff;
+    border-bottom:1px solid #24467f;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.brand img{
+    width:190px;
+    max-width:42vw;
+}
+
+.divider{
+    width:1px;
+    height:48px;
+    background:#d7e0ee;
+}
+
+.product{
+    color:#24467f;
+    font-weight:800;
+    font-size:15px;
+}
+
+.paid{
+    font-size:13px;
+    font-weight:800;
+    color:#13795b;
+    background:#e9f8f2;
+    padding:8px 12px;
+    border-radius:999px;
+}
+
+.body{
+    padding:34px;
+    background:#ffffff;
+}
+
+.eyebrow{
+    margin:0 0 7px;
+    color:#24467f;
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+h1{
+    margin:0;
+    color:#24467f;
+    font-size:30px;
+}
+
+.intro{
+    color:#24467f;
+    line-height:1.6;
+    margin:10px 0 28px;
+}
+
+.tracking{
+    background:#f2f6fc;
+    border:1px solid #d9e3f1;
+    border-radius:12px;
+    padding:16px 18px;
+    margin-bottom:25px;
+}
+
+.tracking span{
+    display:block;
+    color:#6a778a;
+    font-size:11px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    margin-bottom:5px;
+}
+
+.tracking strong{
+    color:#24467f;
+    font-size:19px;
+}
+
+.rows{
+    border-top:1px solid #e5eaf2;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:42% 58%;
+    gap:18px;
+    padding:13px 2px;
+    border-bottom:1px solid #e5eaf2;
+    font-size:14px;
+    background:#ffffff;
+}
+
+.label{
+    color:#66758a;
+    font-weight:600;
+}
+
+.value{
+    color:#24467f;
+    text-align:right;
+    font-weight:700;
+    overflow-wrap:anywhere;
+}
+
+.total{
+    font-size:18px;
+    padding:17px 2px;
+}
+
+.total .label,
+.total .value{
+    color:#172033;
+    font-weight:900;
+}
+
+.notice{
+    margin-top:27px;
+    padding:18px 20px;
+    background:#fff9e8;
+    border:1px solid #f2df9e;
+    border-radius:12px;
+    color:#5d4a0d;
+    font-size:14px;
+    line-height:1.55;
+}
+
+.notice strong{
+    display:block;
+    margin-bottom:4px;
+    color:#3e330b;
+}
+
+.actions{
+    display:flex;
+    gap:12px;
+    margin-top:22px;
+}
+
+.btn{
+    border:0;
+    border-radius:10px;
+    padding:13px 18px;
+    font:inherit;
+    font-weight:800;
+    cursor:pointer;
+    background:#24467f;
+    color:#ffffff;
+}
+
+.footer{
+    background:#ffffff;
+    text-align:center;
+    color:#7a8798;
+    font-size:12px;
+    padding:0 34px 30px;
+}
+
+@media(max-width:600px){
+
+    .page{
+        margin:18px auto;
+    }
+
+    .header{
+        padding:22px;
+    }
+
+    .brand{
+        gap:12px;
+    }
+
+    .divider{
+        display:none;
+    }
+
+    .product{
+        font-size:13px;
+    }
+
+    .paid{
+        font-size:11px;
+    }
+
+    .body{
+        padding:25px 22px;
+    }
+
+    h1{
+        font-size:25px;
+    }
+
+    .row{
+        grid-template-columns:1fr;
+        gap:5px;
+    }
+
+    .value{
+        text-align:left;
+    }
+
+    .actions .btn{
+        width:100%;
+    }
+}
+
+@media print{
+
+    body{
+        background:#ffffff;
+    }
+
+    .page{
+        width:100%;
+        margin:0;
+    }
+
+    .receipt{
+        border:0;
+        box-shadow:none;
+    }
+
+    .actions,
+    .notice{
+        display:none;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<main class="page">
+
+<section class="receipt">
+
+<header class="header">
+
+    <div class="brand">
+
+        <img
+            src="images/logo.png"
+            alt="screenings4u"
+        >
+
+        <span class="divider"></span>
+
+        <div class="product">
+            Workforce Compliance
+        </div>
+
+    </div>
+
+    <span class="paid">
+        PAYMENT RECEIVED
+    </span>
+
+</header>
+
+
+<div class="body" id="receiptBody">
+
+    <p class="eyebrow">
+        Purchase receipt
+    </p>
+
+    <h1>
+        Thank you for your purchase.
+    </h1>
+
+    <p class="intro" id="intro">
+        We are loading your Workforce Compliance receipt.
+    </p>
+
+
+    <div class="tracking">
+
+        <span>
+            Tracking number
+        </span>
+
+        <strong id="tracking">
+            S4U-W-XXXXXXXXXX
+        </strong>
+
+    </div>
+
+
+    <div class="rows">
+
+        <div class="row">
+            <div class="label">Customer</div>
+            <div class="value" id="customer">—</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Email</div>
+            <div class="value" id="email">—</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Organization</div>
+            <div class="value" id="organization">—</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Account type</div>
+            <div class="value" id="accountType">—</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Plan</div>
+            <div class="value" id="plan">—</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Order reference</div>
+            <div class="value" id="reference">—</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Payment date</div>
+            <div class="value" id="paymentDate">—</div>
+        </div>
+
+        <div class="row">
+            <div class="label">Billing frequency</div>
+            <div class="value" id="billing">Monthly</div>
+        </div>
+
+        <div class="row total">
+            <div class="label">Total paid</div>
+            <div class="value" id="amount">—</div>
+        </div>
+
+    </div>
+
+
+    <div class="notice">
+
+        <strong>
+            Check your email and spam/junk folder.
+        </strong>
+
+        Your receipt and account setup information are sent to the email address used during checkout. Follow the account setup email to create your password before signing in.
+
+    </div>
+
+
+    <div class="actions">
+
+        <button
+            class="btn"
+            id="downloadReceipt"
+            type="button"
+        >
+            Download Receipt
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="footer">
+    screenings4u | Workforce Compliance
+</div>
+
+</section>
+
+</main>
+
+
+<script>
+
+const E =
+'https://wyezpseboxbmkedvbmyx.supabase.co/functions/v1/workforce-checkout-status';
+
+const sid =
+new URLSearchParams(location.search).get('session_id') || '';
+
+let tries = 0;
+
+const $ = id =>
+document.getElementById(id);
+
+const money = n =>
+new Intl.NumberFormat(
+    'en-US',
+    {
+        style:'currency',
+        currency:'USD'
+    }
+).format(Number(n || 0));
+
+const date = v =>
+v
+?
+new Intl.DateTimeFormat(
+    'en-US',
+    {
+        dateStyle:'long',
+        timeStyle:'short'
+    }
+).format(new Date(v))
+:
+'—';
+
+
+function render(j){
+
+    $('intro').textContent =
+    `${j.organization_name || 'Your Workforce Compliance account'} has been successfully created. Keep this receipt for your records.`;
+
+    $('tracking').textContent =
+    j.tracking_number || '—';
+
+    $('customer').textContent =
+    j.customer_name || '—';
+
+    $('email').textContent =
+    j.email || '—';
+
+    $('organization').textContent =
+    j.organization_name || '—';
+
+    $('accountType').textContent =
+    j.account_type_label || '—';
+
+    $('plan').textContent =
+    j.plan_name || '—';
+
+    $('reference').textContent =
+    j.reference || '—';
+
+    $('paymentDate').textContent =
+    date(j.paid_at);
+
+    $('billing').textContent =
+    j.billing_frequency || 'Monthly';
+
+    $('amount').textContent =
+    money(j.amount);
+}
+
+
+async function poll(){
+
+    tries++;
+
+    try{
+
+        const r = await fetch(
+            E,
+            {
+                method:'POST',
+
+                headers:{
+                    'Content-Type':'application/json'
+                },
+
+                body:JSON.stringify({
+                    session_id:sid
+                })
+            }
+        );
+
+        const j = await r.json();
+
+        if(j.status === 'provisioned'){
+
+            render(j);
+
+            return;
+        }
+
+    }
+    catch(e){
+
+        console.error(
+            'Unable to load receipt:',
+            e
+        );
+    }
+
+
+    if(tries < 30){
+
+        setTimeout(
+            poll,
+            2000
+        );
+
+    }
+    else{
+
+        $('intro').textContent =
+        'Payment was received. Your receipt details are still processing. Please check your email shortly.';
+    }
+}
+
+
+$('downloadReceipt').addEventListener(
+    'click',
+    () => window.print()
+);
+
+
+poll();
+
+</script>
+
+</body>
+
+</html>
