@@ -29,7 +29,13 @@
         <a href="ctpa.html">For C/TPAs</a>
       </div>
     </div>
-    <div class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></div>
+    <div class="nav-item">
+      <a class="nav-link" href="employer-pricing.html">Pricing <span class="chevron">▼</span></a>
+      <div class="dropdown">
+        <a href="employer-pricing.html">Employer Pricing</a>
+        <a href="ctpa-pricing.html">C/TPA Pricing</a>
+      </div>
+    </div>
     <div class="nav-item"><a class="nav-link" href="blog.html">Blog</a></div>
     <div class="nav-item"><a class="nav-link" href="contact.html">Contact</a></div>`;
 
@@ -50,21 +56,24 @@
       <a class="mobile-nav-link" href="employers.html">Solutions <span class="chevron">▼</span></a>
       <div class="mobile-dropdown"><a href="employers.html">Employers</a><a href="ctpa.html">C/TPAs</a></div>
     </div>
-    <div class="mobile-nav-item"><a class="mobile-nav-link" href="pricing.html">Pricing</a></div>
+    <div class="mobile-nav-item">
+      <a class="mobile-nav-link" href="employer-pricing.html">Pricing <span class="chevron">▼</span></a>
+      <div class="mobile-dropdown"><a href="employer-pricing.html">Employer Pricing</a><a href="ctpa-pricing.html">C/TPA Pricing</a></div>
+    </div>
     <div class="mobile-nav-item"><a class="mobile-nav-link" href="blog.html">Blog</a></div>
     <div class="mobile-nav-item"><a class="mobile-nav-link" href="contact.html">Contact</a></div>
-    <div class="mobile-nav-actions"><a class="btn btn-blue" href="login.html">Sign In</a><a class="btn btn-orange" href="pricing.html">Start Your Account</a></div>`;
+    <div class="mobile-nav-actions"><a class="btn btn-blue" href="login.html">Sign In</a><a class="btn btn-orange" href="contact.html">Contact Sales</a></div>`;
 
   function init(){
     const root=document.getElementById('siteNavigation');
     if(root){
-      root.innerHTML=`<div class="topbar"><div class="container topbar-inner"><div class="topbar-left"><span>Workforce Compliance Software by screenings4u</span><span>•</span><span>Serving Customers Nationwide</span></div><div class="topbar-right"><a href="tel:7732457009">(773) 245-7009</a><a href="mailto:support@screenings4u.com">support@screenings4u.com</a></div></div></div><header class="site-header"><div class="container nav-inner" id="navInner"><a class="brand" href="index.html" aria-label="screenings4u Workforce Compliance"><img src="images/logo.png" alt="screenings4u" class="site-logo"><span class="brand-workforce"><span class="brand-rule"></span><span class="brand-title">Workforce Compliance</span></span></a><nav id="desktopNav" aria-label="Primary navigation"></nav><div class="nav-actions"><a class="btn btn-outline" href="login.html">Sign In</a><a class="btn btn-orange" href="pricing.html">Start Your Account</a><button id="mobileToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button></div><nav id="mobileNav" aria-label="Mobile navigation"></nav></div></header>`;
+      root.innerHTML=`<div class="topbar"><div class="container topbar-inner"><div class="topbar-left"><span>Workforce Compliance Software by screenings4u</span><span>•</span><span>Serving Customers Nationwide</span></div><div class="topbar-right"><a href="tel:7732457009">(773) 245-7009</a><a href="mailto:support@screenings4u.com">support@screenings4u.com</a></div></div></div><header class="site-header"><div class="container nav-inner" id="navInner"><a class="brand" href="index.html" aria-label="screenings4u Workforce Compliance"><img src="images/logo.png" alt="screenings4u" class="site-logo"><span class="brand-workforce"><span class="brand-rule"></span><span class="brand-title">Workforce Compliance</span></span></a><nav id="desktopNav" aria-label="Primary navigation"></nav><div class="nav-actions"><a class="btn btn-outline" href="login.html">Sign In</a><a class="btn btn-orange" href="contact.html">Contact Sales</a><button id="mobileToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button></div><nav id="mobileNav" aria-label="Mobile navigation"></nav></div></header>`;
     }
     const desktop=document.getElementById('desktopNav'), mobile=document.getElementById('mobileNav'), toggle=document.getElementById('mobileToggle');
     if(!desktop||!mobile||!toggle)return;
     desktop.innerHTML=desktopMarkup; mobile.innerHTML=mobileMarkup;
     const page=(location.pathname.split('/').pop()||'index.html').toLowerCase();
-    [...desktop.querySelectorAll('a'),...mobile.querySelectorAll('a')].forEach(a=>{const href=(a.getAttribute('href')||'').split('#')[0].toLowerCase();if(href===page)a.classList.add('active')});
+    [...desktop.querySelectorAll('a'),...mobile.querySelectorAll('a')].forEach(a=>{const href=(a.getAttribute('href')||'').split('#')[0].toLowerCase();if(href===page)a.classList.add('active');if((page==='employer-pricing.html'||page==='ctpa-pricing.html')&&a.textContent.trim().startsWith('Pricing'))a.classList.add('active')});
     toggle.addEventListener('click',()=>{const open=mobile.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'×':'☰';document.body.classList.toggle('s4u-mobile-nav-open',open)});
     mobile.querySelectorAll('.mobile-nav-item').forEach(item=>{const link=item.querySelector(':scope > .mobile-nav-link'),drop=item.querySelector(':scope > .mobile-dropdown');if(!link||!drop)return;link.addEventListener('click',e=>{if(window.innerWidth<=1120){e.preventDefault();item.classList.toggle('open')}})});
     document.addEventListener('click',e=>{if(window.innerWidth>1120)return;if(!mobile.contains(e.target)&&e.target!==toggle&&mobile.classList.contains('is-open')){mobile.classList.remove('is-open');document.body.classList.remove('s4u-mobile-nav-open');toggle.textContent='☰';toggle.setAttribute('aria-expanded','false')}});
