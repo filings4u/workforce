@@ -14,7 +14,7 @@ function initS4UFooter() {
       <div class="footer-cta-copy">
         <span class="footer-cta-label">Workforce Compliance Software</span>
         <strong>Ready to manage your program in one secure workspace?</strong>
-        <p>Choose a monthly software plan for your employer, owner-operator, or C/TPA operation.</p>
+        <p>Choose a monthly software plan for your Employer or C/TPA operation.</p>
       </div>
       <div class="footer-cta-actions">
         <a class="footer-button footer-button-secondary" href="contact.html">Contact Our Team</a>
@@ -30,7 +30,7 @@ function initS4UFooter() {
           <img src="images/logo2.png" alt="screenings4u" class="footer-logo" loading="lazy" decoding="async">
         </a>
         <p class="footer-about">
-          Workforce Compliance software for managing employees, DOT and non-DOT programs,
+          Workforce Compliance software for managing employees, NON-DOT programs,
           testing workflows, random pools, documents, reporting, and compliance activity.
         </p>
         <div class="footer-contact">
@@ -46,14 +46,13 @@ function initS4UFooter() {
           <a href="platform.html">Platform</a>
           <a href="pricing.html">Pricing</a>
           <a href="employers.html">Employers</a>
-          <a href="owner-operators.html">Owner-Operators</a>
           <a href="ctpa.html">C/TPAs</a>
         </div>
 
         <div class="footer-col">
           <h4>Platform</h4>
           <a href="platform.html#workforce">Workforce Management</a>
-          <a href="platform.html#programs">DOT &amp; Non-DOT Programs</a>
+          <a href="platform.html#programs">NON-DOT Programs</a>
           <a href="platform.html#random">Random Pools</a>
           <a href="platform.html#testing">Testing Management</a>
           <a href="platform.html#records">Documents &amp; Reporting</a>
@@ -62,15 +61,14 @@ function initS4UFooter() {
         <div class="footer-col">
           <h4>screenings4u Services</h4>
           <a href="https://screenings4u.com/services.html">Testing Services</a>
-          <a href="https://screenings4u.com/dot-services.html">DOT Services</a>
           <a href="https://screenings4u.com/background-checks.html">Background Checks</a>
           <a href="https://screenings4u.com/consulting-services.html">Consulting</a>
-          <a href="https://screenings4u.com/dot-specimen-collector-training.html">Training</a>
+          <a href="https://training.screenings4u.com/">Training</a>
         </div>
 
         <div class="footer-col">
           <h4>Account &amp; Company</h4>
-          <a href="https://app.screenings4u.com">Workforce Login</a>
+          <a href="login.html">Workforce Login</a>
           <a href="contact.html">Contact Sales</a>
           <a href="https://screenings4u.com/about-us.html">About screenings4u</a>
           <a href="https://screenings4u.com/faqs.html">FAQs</a>
@@ -91,7 +89,7 @@ function initS4UFooter() {
         <a href="https://screenings4u.com/accessibility.html">Accessibility</a>
         <a href="https://screenings4u.com/disclaimer.html">Disclaimer</a>
       </nav>
-      <a href="https://app.screenings4u.com" class="footer-admin-login">Workforce Login</a>
+      <a href="login.html" class="footer-admin-login">Workforce Login</a>
     </div>
   `;
 
