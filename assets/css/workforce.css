@@ -318,3 +318,162 @@
 .cta-actions{display:flex;gap:10px;flex-wrap:wrap;flex:0 0 auto}
 @media(max-width:980px){.pricing-bottom-purchase{grid-template-columns:1fr}.pricing-bottom-plan{grid-template-columns:1fr auto auto;align-items:center;text-align:left}.pricing-bottom-plan em{text-align:right}.cta-panel{align-items:flex-start}.cta-actions{width:100%}.cta-actions .btn{flex:1}}
 @media(max-width:700px){.pricing-comparison{min-width:860px}.pricing-sticky>.container{min-height:74px}.pricing-sticky-plans a{min-width:120px}.pricing-bottom-plan{grid-template-columns:1fr}.pricing-bottom-plan em{text-align:left}.cta-actions{display:grid;grid-template-columns:1fr}.cta-actions .btn{width:100%}}
+
+
+/* WORKFORCE SUBSCRIPTION COMPARISON V2 */
+.subscription-comparison-wrap{
+  margin-top:34px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:var(--shadow-sm);
+  overflow:visible;
+}
+.subscription-comparison-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  table-layout:fixed;
+}
+.subscription-comparison-table th,
+.subscription-comparison-table td{
+  padding:16px 18px;
+  border-bottom:1px solid var(--line);
+  border-right:1px solid var(--line);
+  text-align:center;
+  vertical-align:middle;
+  font-size:12px;
+}
+.subscription-comparison-table tr > *:last-child{border-right:0}
+.subscription-comparison-table tbody tr:last-child > *{border-bottom:1px solid var(--line)}
+.subscription-comparison-table tbody th,
+.subscription-comparison-table tfoot th{
+  width:31%;
+  text-align:left;
+}
+.subscription-comparison-table tbody th{
+  background:#f8faff;
+  color:var(--ink);
+  font-weight:800;
+}
+.subscription-comparison-table tbody td{
+  background:#fff;
+  color:var(--blue);
+  font-weight:750;
+}
+.subscription-comparison-table thead{
+  position:sticky;
+  top:72px;
+  z-index:30;
+}
+.subscription-comparison-table thead th{
+  background:#fff;
+  color:var(--blue-dark);
+  box-shadow:0 10px 24px rgba(17,42,78,.08);
+  border-bottom:1px solid var(--line);
+  padding:18px 14px;
+}
+.subscription-feature-spacer{
+  width:31%;
+  background:#fff!important;
+}
+.subscription-plan-head{width:23%}
+.subscription-plan-recommended{
+  background:#f5f8ff!important;
+  box-shadow:inset 2px 0 0 rgba(36,70,127,.12), inset -2px 0 0 rgba(36,70,127,.12);
+}
+.subscription-plan-name{
+  display:block;
+  color:var(--blue);
+  font-size:15px;
+  font-weight:900;
+  margin-bottom:4px;
+}
+.subscription-plan-price{
+  display:block;
+  color:var(--blue-dark);
+  font-size:30px;
+  font-weight:900;
+  letter-spacing:-.04em;
+  line-height:1;
+}
+.subscription-plan-price small,
+.subscription-bottom-plan small{
+  font-size:9px;
+  color:var(--muted);
+  font-weight:750;
+  letter-spacing:0;
+  margin-left:4px;
+}
+.subscription-best-for th,
+.subscription-best-for td{padding-top:18px;padding-bottom:18px}
+.subscription-best-for td{
+  color:#52657a;
+  font-size:11px;
+  line-height:1.55;
+  font-weight:650;
+}
+.subscription-check{
+  display:inline-grid;
+  place-items:center;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background:#eef4ff;
+  color:var(--blue);
+  font-size:14px;
+  font-weight:900;
+}
+.subscription-not-included{
+  color:#98a2b3;
+  font-size:17px;
+  font-weight:700;
+}
+.subscription-comparison-table tfoot th,
+.subscription-comparison-table tfoot td{
+  background:#fff;
+  padding:22px 16px;
+  border-bottom:0;
+  vertical-align:top;
+}
+.subscription-bottom-label{
+  display:block;
+  color:var(--blue);
+  font-size:15px;
+  font-weight:900;
+  padding-top:8px;
+}
+.subscription-bottom-plan{
+  display:grid;
+  gap:7px;
+  justify-items:center;
+}
+.subscription-bottom-plan > span{
+  color:var(--blue);
+  font-size:13px;
+  font-weight:900;
+}
+.subscription-bottom-plan > strong{
+  color:var(--blue-dark);
+  font-size:24px;
+  font-weight:900;
+  letter-spacing:-.035em;
+}
+.subscription-bottom-plan .btn{
+  width:100%;
+  max-width:190px;
+  margin-top:6px;
+}
+@media(max-width:900px){
+  .subscription-comparison-wrap{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+  }
+  .subscription-comparison-table{min-width:820px}
+  .subscription-comparison-table thead{top:64px}
+}
+@media(max-width:700px){
+  .subscription-comparison-table th,
+  .subscription-comparison-table td{padding:14px 12px}
+  .subscription-plan-price{font-size:26px}
+}

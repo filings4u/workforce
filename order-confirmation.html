@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#24467f">
+<title>Subscription Confirmation | screenings4u Workforce</title>
+<link rel="icon" href="images/fav.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/desktop-nav.css">
+<link rel="stylesheet" href="assets/css/mobile-nav.css">
+<link rel="stylesheet" href="assets/css/workforce.css">
+<style>
+.confirmation-main{padding:70px 0 90px;background:#f7f9fc;min-height:62vh}
+.confirmation-card{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-sm);padding:38px;text-align:center}
+.confirmation-icon{width:58px;height:58px;margin:0 auto 20px;display:grid;place-items:center;border-radius:50%;background:#eef4ff;color:var(--blue);font-size:28px;font-weight:900}
+.confirmation-card h1{margin:0 0 10px;color:var(--blue-dark);font-size:clamp(32px,5vw,48px);letter-spacing:-.04em}
+.confirmation-card p{color:var(--muted);line-height:1.7}
+.confirmation-summary{margin:28px 0 0;padding:22px;border:1px solid var(--line);border-radius:14px;text-align:left;background:#fbfcfe;display:grid;gap:11px}
+.confirmation-row{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.confirmation-row:last-child{border-bottom:0;padding-bottom:0}
+.confirmation-row span{color:var(--muted);font-size:12px}
+.confirmation-row strong{color:var(--blue-dark);font-size:13px;text-align:right}
+.confirmation-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+.confirmation-status{margin-top:20px;font-size:12px;font-weight:700;color:var(--blue)}
+@media(max-width:640px){.confirmation-main{padding:42px 0 64px}.confirmation-card{padding:26px 20px}.confirmation-row{align-items:flex-start}.confirmation-actions{display:grid}.confirmation-actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<div id="siteNavigation"></div>
+<main class="confirmation-main">
+  <div class="container">
+    <section class="confirmation-card" aria-live="polite">
+      <div class="confirmation-icon">✓</div>
+      <span class="eyebrow">Subscription payment</span>
+      <h1>Payment confirmed.</h1>
+      <p id="confirmationMessage">We are finalizing your Workforce subscription and preparing your account setup.</p>
+
+      <div class="confirmation-summary" id="confirmationSummary">
+        <div class="confirmation-row"><span>Reference</span><strong id="reference">Processing…</strong></div>
+        <div class="confirmation-row"><span>Plan</span><strong id="plan">Workforce subscription</strong></div>
+        <div class="confirmation-row"><span>Billing</span><strong id="billing">Monthly</strong></div>
+      </div>
+
+      <div class="confirmation-status" id="statusText">Preparing account setup…</div>
+      <div class="confirmation-actions">
+        <a class="btn btn-orange" id="accountSetupButton" href="#" hidden>Continue Account Setup</a>
+        <a class="btn btn-outline" href="login.html">Workforce Login</a>
+      </div>
+    </section>
+  </div>
+</main>
+<footer id="siteFooter" aria-label="Website footer"></footer>
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/footer.js"></script>
+<script>
+(() => {
+  "use strict";
+  const API = "https://wyezpseboxbmkedvbmyx.supabase.co/functions/v1/workforce-checkout-status";
+  const params = new URLSearchParams(location.search);
+  const orderId = params.get("order") || "";
+  const tracking = params.get("tracking") || "";
+  const ref = document.getElementById("reference");
+  const plan = document.getElementById("plan");
+  const billing = document.getElementById("billing");
+  const statusText = document.getElementById("statusText");
+  const message = document.getElementById("confirmationMessage");
+  const button = document.getElementById("accountSetupButton");
+
+  if (tracking) ref.textContent = tracking;
+
+  async function check() {
+    if (!orderId) {
+      statusText.textContent = "Your payment is complete. Check your email for the account setup link.";
+      return true;
+    }
+    try {
+      const response = await fetch(API, {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({order_id: orderId})
+      });
+      const data = await response.json().catch(() => ({}));
+      if (data.reference) ref.textContent = data.reference;
+      if (data.plan_name) plan.textContent = data.plan_name;
+      if (data.billing_frequency) billing.textContent = data.billing_frequency;
+
+      if (data.intake_url) {
+        button.href = data.intake_url;
+        button.hidden = false;
+        statusText.textContent = "Your account setup is ready.";
+        message.textContent = "Your Workforce subscription is active. Continue to account setup to create your organization and portal access.";
+        return true;
+      }
+
+      if (data.status === "paid" || data.status === "provisioned") {
+        statusText.textContent = "Your account setup link is being prepared. You will also receive it by email.";
+      } else {
+        statusText.textContent = "Finalizing your subscription…";
+      }
+    } catch (error) {
+      statusText.textContent = "Your payment was submitted. We are still preparing your account setup link.";
+    }
+    return false;
+  }
+
+  let attempts = 0;
+  const run = async () => {
+    attempts += 1;
+    const done = await check();
+    if (!done && attempts < 20) setTimeout(run, 1500);
+    else if (!done) statusText.textContent = "Your subscription is processing. Your account setup link will also be sent by email.";
+  };
+  run();
+})();
+</script>
+</body>
+</html>
