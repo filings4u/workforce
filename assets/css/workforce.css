@@ -363,7 +363,7 @@
 }
 .subscription-comparison-table thead{
   position:sticky;
-  top:72px;
+  top:0;
   z-index:30;
 }
 .subscription-comparison-table thead th{
@@ -470,7 +470,7 @@
     -webkit-overflow-scrolling:touch;
   }
   .subscription-comparison-table{min-width:820px}
-  .subscription-comparison-table thead{top:64px}
+  .subscription-comparison-table thead{top:0}
 }
 @media(max-width:700px){
   .subscription-comparison-table th,
