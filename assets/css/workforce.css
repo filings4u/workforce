@@ -365,6 +365,14 @@
   position:sticky;
   top:0;
   z-index:30;
+  opacity:var(--pricing-sticky-opacity,1);
+  transform:translateY(var(--pricing-sticky-shift,0px));
+  visibility:var(--pricing-sticky-visibility,visible);
+  pointer-events:var(--pricing-sticky-pointer,auto);
+  will-change:opacity,transform;
+}
+.subscription-comparison-table tfoot{
+  opacity:1;
 }
 .subscription-comparison-table thead th{
   background:#fff;
